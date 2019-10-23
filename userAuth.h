@@ -23,12 +23,6 @@ void login();
         --> Returns true if the user is found.
         --> Returns false if they are not found.
 */
-bool parseLoginDetails();
+bool parseLoginDetails(user loginAttempt);
 
-/*
-    saveUserDetails() function:
-        --> Used when a new user is created.
-        --> Saves the user's details to the users.dat file.
-        --> 
-*/
-void saveUserDetails();
+void newLogin(void);

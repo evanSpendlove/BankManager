@@ -2,6 +2,13 @@
     Function for user input/output functions.
 */
 
+#include "bankStructs.h"
+
+void outputError(int errorCode);
+
+void printInstruction(const char *format, ...);
+
+void printError(const char *format, ...);
 
 void adminMenu();
 

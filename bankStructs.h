@@ -36,7 +36,16 @@ Structs we need:
 #include <stdbool.h>
 
 #ifndef bankStructs_h
-    #define bankStruct_h
+    #define bankStructs_h
+
+        /* PRINT COLOURS */
+        #define PRINT_RED     "\x1b[31m" // Escape code to print text in red
+        #define PRINT_BLUE    "\x1b[34m" // Escape code to print text in blue
+        #define PRINT_GREEN   "\x1b[32m" // Escape code to print text in green
+        #define PRINT_MAGENTA "\x1b[35m" // Escape code to print text in magenta
+        #define PRINT_CYAN    "\x1b[36m" // Escape code to print text in cyan
+        #define PRINT_YELLOW  "\x1b[33m" // Escape code to print text in yellow
+        #define PRINT_RESET   "\x1b[0m" // Resets print colour to white
         
         /* User struct - for storing a username/password pair */
         typedef struct user
@@ -52,7 +61,5 @@ Structs we need:
             char firstName[30], lastName[30];
             float currentBalance;
         }account;
-
-        
 
 #endif

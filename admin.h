@@ -11,7 +11,7 @@
         --> Writes the new user to the end of the file
         --> Closes the file
 */
-void addUser();
+void addUser(user newUser);
 
 /*
     deleteUser() function:
